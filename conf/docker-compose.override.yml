@@ -1,0 +1,7 @@
+services:
+  db:
+    ports:
+      - $DB_PORT:5432
+  app:
+    ports:
+      - 8000:8000

@@ -1,0 +1,134 @@
+_type: export
+__export_format: 4
+__export_date: 2021-12-07T05:23:53.997Z
+__export_source: insomnia.desktop.app:v2021.6.0
+resources:
+  - _id: req_e9921b2623e444ba909fd3bc9869329a
+    parentId: wrk_bf93acf7496f41f78f59d562fca836c8
+    modified: 1638851314248
+    created: 1638851305421
+    url: "{{_.api_url}}/reset"
+    name: reset
+    description: ""
+    method: POST
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1638851305421
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: wrk_bf93acf7496f41f78f59d562fca836c8
+    parentId: null
+    modified: 1638851095032
+    created: 1638851095032
+    name: number counter
+    description: ""
+    scope: collection
+    _type: workspace
+  - _id: req_ea6637bf71634a02848fbd6be81c1841
+    parentId: wrk_bf93acf7496f41f78f59d562fca836c8
+    modified: 1638854583339
+    created: 1638851144851
+    url: "{{_.api_url}}/save/:number"
+    name: save
+    description: ""
+    method: POST
+    body: {}
+    parameters:
+      - id: pair_a06c1bde2d0d49e4bfcaf925bfe0cb7a
+        name: number
+        value: "1"
+        description: ""
+    headers: []
+    authentication: {}
+    metaSortKey: -1638851144851
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_daded797ed254f439deaf0d923ee1efb
+    parentId: wrk_bf93acf7496f41f78f59d562fca836c8
+    modified: 1638851133687
+    created: 1638851103968
+    url: "{{_.api_url}}/list"
+    name: list
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1638851103969
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: env_e50564fc82ec60229de4020178cff33cfc266256
+    parentId: wrk_bf93acf7496f41f78f59d562fca836c8
+    modified: 1638851331049
+    created: 1638851095047
+    name: Base Environment
+    data: {}
+    dataPropertyOrder: {}
+    color: null
+    isPrivate: false
+    metaSortKey: 1638851095047
+    _type: environment
+  - _id: jar_e50564fc82ec60229de4020178cff33cfc266256
+    parentId: wrk_bf93acf7496f41f78f59d562fca836c8
+    modified: 1638851095055
+    created: 1638851095055
+    name: Default Jar
+    cookies: []
+    _type: cookie_jar
+  - _id: spc_9a26a01bc45747129eb66b8a36dd025c
+    parentId: wrk_bf93acf7496f41f78f59d562fca836c8
+    modified: 1638851095038
+    created: 1638851095038
+    fileName: number counter
+    contents: ""
+    contentType: yaml
+    _type: api_spec
+  - _id: env_4c75a734faaa44ee9ab994ca7046e897
+    parentId: env_e50564fc82ec60229de4020178cff33cfc266256
+    modified: 1638854525136
+    created: 1638851334030
+    name: dev
+    data:
+      api_url: localhost:5005
+    dataPropertyOrder:
+      "&":
+        - api_url
+    color: null
+    isPrivate: false
+    metaSortKey: 1638851334030
+    _type: environment
+  - _id: env_327b4e24cc954ff5a9c39c71159fb279
+    parentId: env_e50564fc82ec60229de4020178cff33cfc266256
+    modified: 1638854576164
+    created: 1638854519158
+    name: prod
+    data:
+      api_url: https://projeto-scriptsx.herokuapp.com
+    dataPropertyOrder:
+      "&":
+        - api_url
+    color: null
+    isPrivate: false
+    metaSortKey: 1638854519158
+    _type: environment
